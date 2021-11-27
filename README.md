@@ -470,3 +470,46 @@ iface eth0 inet static
          netmask 255.255.255.240
          gateway 192.173.18.1
 ```
+
+- Kemudian uncomment `net.ipv4.ip_forward=1 pada file /etc/sysctl.conf` pada semua router.
+- Pada router foosha lakukan perintah `iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.173.0.0/16` untuk client agar terhubung ke internet dan `iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 192.173.0.0/16` untuk server terhubung ke internet
+- Lalu, lakukan routing dengan file `route.sh` pada dokumen `\root`. Kemudian jalankan dengan perintah `source route.sh`
+
+#### Foosha
+```
+route add -net 192.173.144.0 netmask 255.255.255.252 gw 192.173.192.2
+route add -net 192.173.136.0 netmask 255.255.255.128 gw 192.173.192.2
+route add -net 192.173.160.0 netmask 255.255.252.0 gw 192.173.192.2
+route add -net 192.173.128.0 netmask 255.255.248.0 gw 192.173.192.2
+route add -net 192.173.8.0 netmask 255.255.255.252 gw 192.173.32.2
+route add -net 192.173.20.0 netmask 255.255.252.0 gw 192.173.32.2
+route add -net 192.173.18.0 netmask 255.255.255.240 gw 192.173.32.2
+route add -net 192.173.16.0 netmask 255.255.254.0 gw 192.173.32.2
+route add -net 192.173.4.0 netmask 255.255.255.0 gw 192.173.32.2
+route add -net 192.173.0.0 netmask 255.255.252.0 gw 192.173.32.2
+```
+
+#### Guanhao
+```
+route add -net 192.173.4.0 netmask 255.255.255.0 gw 192.173.8.2
+route add -net 192.173.0.0 netmask 255.255.252.0 gw 192.173.8.2
+route add -net 192.173.18.0 netmask 255.255.254.0 gw 192.173.16.2
+```
+
+#### Water7
+```
+route add -net 192.173.128.0 netmask 255.255.248.0 gw 192.173.144.2
+route add -net 192.173.136.0 netmask 255.255.255.128 gw 192.173.144.2
+```
+
+#### Oimo
+```
+route add -net 192.173.0.0 netmask 255.255.252.0 gw 192.173.4.2
+```
+
+Kendala Praktikum:
+- Pada file .cpt tidak dapat melakukan ping dari server fukurou ke server doriki (sudah diselesaikan)
+- Tidak dapat menyambungkan 5 kabel dalam FOOSHA (sudah diselesaikan)
+- Saat memasangkan kabel di cpt, agak sedikit bingung penamaannya (interface 0/0, interface 0/1) dan lainnya
+- Saat melakukan ping di cpt, harus dilakukan 2-3x tidak bisa langsung 1x karena failed, nemun setelah dicoba lagi menjadi succesful
+- Pada mengerjakan GNS3, atur konfigurasinya ada yang kebalik atau salah pada netmask
