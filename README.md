@@ -250,10 +250,9 @@ Subnet serta jumlah IP untuk mendapatkan netmask dari tiap subnet ditunjukkan ol
 | A13  | 192.173.136.0 /30 | 255.255.255.252 |
 
 ### Menghitung NID dengan tree (pohon)
-Subnet pertama memiliki NID 192.173.0.0 dengan netmask /19. Perhitungan dengan pohon dapat dilihat sebagai berikut :
-![image](https://user-images.githubusercontent.com/72689610/143667143-2b90879b-1ea2-41b6-a309-44405b72e3b7.png)
+![image](https://user-images.githubusercontent.com/72689610/143675446-cb941553-e891-41e1-af60-b3cfb67f7c0b.png)
 
-### [Link Tree](https://intip.in/PohonPembagianIpVSLM)
+### [Link Tree](https://miro.com/app/board/o9J_lhT-ylc=/)
 
 ### Membuat konfigurasi pada GNS3
 
