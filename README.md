@@ -513,3 +513,5 @@ Kendala Praktikum:
 - Saat memasangkan kabel di cpt, agak sedikit bingung penamaannya (interface 0/0, interface 0/1) dan lainnya
 - Saat melakukan ping di cpt, harus dilakukan 2-3x tidak bisa langsung 1x karena failed, nemun setelah dicoba lagi menjadi succesful
 - Pada mengerjakan GNS3, atur konfigurasinya ada yang kebalik atau salah pada netmask
+- Pada pengerjaan GNS3, pada modul tidak disuruh untuk melakukan CIDR pada server
+- Terdapat berbagai kesalahan konfigurasi pada node
