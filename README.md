@@ -230,6 +230,31 @@ Menggabungkan subnet-subnet paling bawah dalam topologi, berikut penggabungannya
 
 ![image](https://user-images.githubusercontent.com/36225278/143669362-2b98c6a0-adf5-4859-940a-06c77a57013b.png)
 
+### Jumlah Alamat IP
+Subnet serta jumlah IP untuk mendapatkan netmask dari tiap subnet ditunjukkan oleh tabel berikut :
+| Subnet  | NID | Netmask |
+| :---         |     :---:      |          ---: |
+| ------------- | ------------- | ------------- |
+| A1  | 192.173.0.0 /21 | 255.255.248.0 |
+| A2  | 192.173.8.0 /25 | 255.255.255.128 |
+| A3  | 192.173.32.0 /22 | 255.255.252.0 |
+| A4  | 192.173.192.0 /22 | 255.255.252.0 |
+| A5  | 192.173.148.0  /22 | 255.255.252.0 |
+| A6  | 192.173.144.0 /23 | 255.255.254 |
+| A7  | 192.173.146.0 /28 | 255.255.255.240 |
+| A8  | 192.173.128.0 /22 | 255.255.252.0 |
+| A9  | 192.173.132.0 /24 | 255.255.255.0 |
+| A10  | 192.173.16.0 /30 | 255.255.255.252 |
+| A11 | 192.173.64.0 /30 | 255.255.255.252 |
+| A12  | 192.173.160.0 /30 | 255.255.255.252 |
+| A13  | 192.173.136.0 /30 | 255.255.255.252 |
+
+### Menghitung NID dengan tree (pohon)
+Subnet pertama memiliki NID 192.173.0.0 dengan netmask /19. Perhitungan dengan pohon dapat dilihat sebagai berikut :
+![image](https://user-images.githubusercontent.com/72689610/143667143-2b90879b-1ea2-41b6-a309-44405b72e3b7.png)
+
+### [Link Tree](https://intip.in/PohonPembagianIpVSLM)
+
 ### Membuat konfigurasi pada GNS3
 
 #### Foosha
