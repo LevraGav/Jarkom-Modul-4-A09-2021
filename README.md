@@ -506,6 +506,11 @@ route add -net 192.173.136.0 netmask 255.255.255.128 gw 192.173.144.2
 route add -net 192.173.0.0 netmask 255.255.252.0 gw 192.173.4.2
 ```
 
+## Hasil ping
+
+#### Foosha
+![image](https://user-images.githubusercontent.com/36225278/143685098-ed2289b1-03ba-4e28-b711-8fb9186d1bd6.png)
+
 Kendala Praktikum:
 - Pada file .cpt tidak dapat melakukan ping dari server fukurou ke server doriki (sudah diselesaikan)
 - Tidak dapat menyambungkan 5 kabel dalam FOOSHA (sudah diselesaikan)
